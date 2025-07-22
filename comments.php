@@ -47,7 +47,7 @@
                 </div>
             </div>
         </div>
-        <button type="submit" class="submit"><?php _e('提交审核'); ?></button>
+        <button type="submit" class="submit"><?php _e('提交留言'); ?></button>
     </div>
     </form>
 </div>
