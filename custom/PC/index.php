@@ -72,13 +72,13 @@
             <h1 class="animated fadeInUp">
                 <a href="<?php $this->permalink() ?>" ><?php if (isset($this->fields->title)): ?><?php  $this->fields->title();?><?php else: ?><?php $this->title();?><?php endif; ?></a>
             </h1>
-            <div class="post_preview animated fadeInUp">
+            <a class="post_preview animated fadeInUp" href="<?php $this->permalink() ?>" >
                 <p class="post_abstract"><?php $this->excerpt(80,'...'); ?></p>
                 <?php if(showThumbnail($this)):?>
                 <div class="post_img lazy-load" data-src="<?php echo showThumbnail($this) . ($this->options->imgSmall ?: ''); ?>">
                 </div>
                 <?php endif;?>
-            </div>
+            </a>
             <div class="post_meta animated fadeInUp">
                 <span><?php echo time_ago($this->date); ?></span>
                 <span><?php get_post_view($this) ?>&nbsp;阅读</span>
