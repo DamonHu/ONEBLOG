@@ -14,6 +14,7 @@ foreach ($domains as $domain): ?>
 <?php endif; ?>
 <?php if (!empty($this->options->Favicon)):?>
 <link rel="shortcut icon" href="<?php echo $this->options->Favicon; ?>" type="image/x-icon" />
+<link rel="icon" href="<?php echo $this->options->Favicon; ?>" type="image/x-icon" />
 <?php endif; ?>
 <title>
 <?php if ($this->is('index')): ?>
@@ -30,7 +31,7 @@ foreach ($domains as $domain): ?>
 <link href="<?php $this->options->themeUrl('/assets/sdk/animate.compat.css'); ?>" rel="stylesheet"><!--动画效果-->
 <link href="//at.alicdn.com/t/c/font_3940454_u9s3lgsdiq.css" rel="stylesheet"/><!---图标库 iconfont.cn -->
 <link rel="stylesheet" href="<?php $this->options->themeUrl('/assets/sdk/fancybox3/jquery.fancybox.min.css'); ?>" /><!--灯箱效果-->
-<link href="<?php $this->options->themeUrl('/assets/css/PC.css?v=3.5.3'); ?>" rel="stylesheet"/><!--主题核心样式-->
+<link href="<?php $this->options->themeUrl('/assets/css/PC.css?v=3.5.3.2'); ?>" rel="stylesheet"/><!--主题核心样式-->
 <style>
 :root {
     --theme-color: <?php $color = $this->options->themeColor;echo $color ? $color : '#ff5050';?>;
@@ -77,3 +78,8 @@ var logoLightUrl = "<?php echo $this->options->logoLight ? $this->options->logoL
 <?php $this->header();?>
 </head>
 <body>
+    <div class="header-navigation"><!--底部菜单导航-->
+        <?php if ($menu = parseCustomMenu()): ?>
+        <?php echo $menu['noIcon']; ?>
+        <?php endif; ?>
+    </div>

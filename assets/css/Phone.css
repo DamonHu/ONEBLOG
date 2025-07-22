@@ -130,6 +130,8 @@ a {
     color: var(--black);
     position: relative;
     z-index: 99;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 p {
@@ -153,6 +155,7 @@ blockquote {
     margin-bottom: 2em;
     color: var(--dark-grey);
     border-radius: 5px;
+    font-weight: bold;
 }
 
 blockquote:before {
