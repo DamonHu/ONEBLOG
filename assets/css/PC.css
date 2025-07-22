@@ -91,6 +91,7 @@ html {
     background-size: auto;
     background-repeat: repeat;
     background-attachment: fixed;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, Cantarell, "Noto Sans", sans-serif;
 }
 
 /**全局输入框聚焦禁用默认样式**/
