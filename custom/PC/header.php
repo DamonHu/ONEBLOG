@@ -14,7 +14,6 @@ foreach ($domains as $domain): ?>
 <?php endif; ?>
 <?php if (!empty($this->options->Favicon)):?>
 <link rel="shortcut icon" href="<?php echo $this->options->Favicon; ?>" type="image/x-icon" />
-<link rel="icon" href="<?php echo $this->options->Favicon; ?>" type="image/x-icon" />
 <?php endif; ?>
 <title>
 <?php if ($this->is('index')): ?>
