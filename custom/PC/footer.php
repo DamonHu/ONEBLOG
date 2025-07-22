@@ -27,7 +27,7 @@
         <a id="wxmp" title="微信公众号"><i class="iconfont icon-wechat"></i></a>
         <?php endif; ?>
         <?php if (!empty($this->options->Email)): ?>
-        <a id="tomail" title="博主邮箱"><i class="iconfont icon-mail"></i></a>
+        <a href="mailto:<?php $this->options->Email(); ?>" title="博主邮箱"><i class="iconfont icon-mail"></i></a>
         <?php endif; ?>
         <?php if (!empty($this->options->Github)): ?>
         <a href="<?php $this->options->Github();?>" target="_blank" title="Github"><i class="iconfont icon-github"></i></a>
