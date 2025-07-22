@@ -3,7 +3,7 @@
         <?php if ($menu = parseCustomMenu()): ?>
         <?php echo $menu['noIcon']; ?>
         <!--自定义-->
-        <a href="https://oneblog.net/oneblog" target="_blank">主题</a>
+        <a href="https://zhiji.im/sitemap.xml" target="_blank">SiteMap</a>
         <?php endif; ?>
     </div>
     <div class="copyright">
