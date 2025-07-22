@@ -3,7 +3,7 @@
         <?php if ($menu = parseCustomMenu()): ?>
         <?php echo $menu['noIcon']; ?>
         <!--自定义-->
-        <a href="https://zhiji.im/sitemap.xml" target="_blank">SiteMap</a>
+        <a href="<?php $this->options->siteUrl(); ?>sitemap.xml" target="_blank">SiteMap</a>
         <?php endif; ?>
     </div>
     <div class="copyright">
