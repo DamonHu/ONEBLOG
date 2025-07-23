@@ -137,15 +137,17 @@ input:focus-within {
 
 .header-navigation{
     width: 800px;
-    margin: 50px auto -20px;
+    margin: 50px auto -30px;
     font-size: 17px;
     font-weight: bold;
     -webkit-font-smoothing: auto;
     display: flex;
+    justify-content: flex-end;
 }
 
 .header-navigation a{
-    margin-right: 16px;
+    margin-left: 20px;
+    padding: 10px 0;
 }
 
 /**————————全站通用容器 A4纸样式————————**/
