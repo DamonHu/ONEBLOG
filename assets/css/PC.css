@@ -146,8 +146,10 @@ input:focus-within {
 }
 
 .header-navigation a{
-    margin-left: 20px;
-    padding: 10px 0;
+    margin-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
 }
 
 /**————————全站通用容器 A4纸样式————————**/
