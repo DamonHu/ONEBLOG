@@ -81,4 +81,9 @@ var logoLightUrl = "<?php echo $this->options->logoLight ? $this->options->logoL
         <?php if ($menu = parseCustomMenu()): ?>
         <?php echo $menu['noIcon']; ?>
         <?php endif; ?>
+        <?php if($this->user->hasLogin()): ?>
+            <a href="<?php $this->options->adminUrl(); ?>" style="color: #e53938">管理后台</a>
+        <?php else: ?>
+            <a href="<?php $this->options->adminUrl(); ?>login.php" style="color: #e53938">注册/登录</a>
+        <?php endif; ?>
     </div>

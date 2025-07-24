@@ -8,6 +8,11 @@
     <?php if ($menu = parseCustomMenu()): ?>
         <?php echo $menu['hasIcon']; ?>
     <?php endif; ?>
+    <?php if($this->user->hasLogin()): ?>
+            <li><a href="<?php $this->options->adminUrl(); ?>" style="color: #ff5050">管理后台</a></li>
+        <?php else: ?>
+            <li><a href="<?php $this->options->adminUrl(); ?>login.php" style="color: #ff5050">注册/登录</a></li>
+        <?php endif; ?>
     <div class="copyright">
         <div class="switch">
             夜间模式<input type="checkbox" id="oneblog-protect"><label for="oneblog-protect" class="switchBtn"></label>
