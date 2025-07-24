@@ -17,6 +17,14 @@
                 <span>/</span>
                 <span><?php echo art_count($this->cid); ?>&nbsp;字</span>
             </div>
+            <div class="post_meta" style="margin-top: 30px; display: flex; padding: 0;">
+                <span><img src="<?php echo Typecho_Common::gravatarUrl($this->author->mail, 64); ?>" style="border-radius: 50%;"></img></span>
+            </div>
+            <div class="post_meta">
+                <span><?php $this->author() ?></span>
+                <span>/</span>
+                <span><a href="<?php $this->author->url(); ?>" target="_blank" style="background: transparent;color: #ffffff;"><?php $this->author->url(); ?></a></span>
+            </div>
         </div>
     </div>
     <?php else: ?>
@@ -30,6 +38,11 @@
             <span><?php $this->commentsNum('0 评论', '1 评论', '%d 评论'); ?></span>
             <span><?php echo art_count($this->cid); ?>&nbsp;字</span>
         </div>
+        <div class="post_meta" style="margin-top: 20px; display: flex;">
+                <span><img src="<?php echo Typecho_Common::gravatarUrl($this->author->mail, 64); ?>" style="border-radius: 50%;"></img></span>
+                <span><?php $this->author() ?></span>
+                <span><a href="<?php $this->author->url(); ?>" target="_blank"><?php $this->author->url(); ?></a></span>
+            </div>
     </div>
     <?php endif;?>
     <!--通用文章正文-->

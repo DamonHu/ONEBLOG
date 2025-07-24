@@ -18,8 +18,12 @@
     </div>
     
     <!--文章标题和统计-->
-    <div class="post_info">
+    <div class="post_info" style="margin-bottom: 5px;">
         <h1><?php $this->title();?></h1>   
+        <span><?php $this->author() ?></span>
+        <span><a href="<?php $this->author->url(); ?>" target="_blank" style="background: transparent;color: #bbbbbb;"><?php $this->author->url(); ?></a></span>
+    </div>
+    <div class="post_info">
         <span>阅读&nbsp;<?php get_post_view($this) ?></span>
         <span><?php $this->commentsNum('评论 0', '评论 1', '评论 %d'); ?></span>
     </div>
@@ -39,6 +43,11 @@
             <span><?php $this->commentsNum('0 评论', '1 评论', '%d 评论'); ?></span>
             <span><?php echo art_count($this->cid); ?>&nbsp;字</span>
         </div>
+        <div class="post_meta" style="margin-top: 20px; display: flex;">
+                <span><img src="<?php echo Typecho_Common::gravatarUrl($this->author->mail, 64); ?>" style="border-radius: 50%;"></img></span>
+                <span><?php $this->author() ?></span>
+                <span><a href="<?php $this->author->url(); ?>" target="_blank"><?php $this->author->url(); ?></a></span>
+            </div>
     </div>
     <?php endif;?>
 
